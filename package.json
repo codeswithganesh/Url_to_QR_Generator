@@ -1,0 +1,23 @@
+{
+  "name": "url_to_qr_generator",
+  "version": "1.0.0",
+  "description": "This app takes the Url as Input and give the QR as Output",
+  "main": "app.js",
+  "scripts": {
+    "build": "netlify deploy --prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Sunil Ganesh K",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "netlify-cli": "^19.0.0",
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^3.1.9",
+    "qr-image": "^3.2.0",
+    "serverless-http": "^3.2.0"
+  },
+  "keywords": []
+}
