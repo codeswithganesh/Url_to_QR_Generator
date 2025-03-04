@@ -15,5 +15,9 @@ const routes=require('./controller/logic');
 
 app.use("/.netlify/functions/api",routes);
 
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'view','index.html'));
+})
+
 module.exports=app;
 module.exports.handler=serverless(app);
