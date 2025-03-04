@@ -1,4 +1,5 @@
 const path=require('path');
+const serverless=require('serverless-http');
 const express=require('express');
 const bodyParser=require('body-parser');
 
@@ -15,3 +16,4 @@ const routes=require('./controller/logic');
 app.use("/.netlify/functions/api",routes);
 
 module.exports=app;
+module.exports.handler=serverless(app);
