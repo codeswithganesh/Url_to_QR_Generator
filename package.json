@@ -4,7 +4,7 @@
   "description": "This app takes the Url as Input and give the QR as Output",
   "main": "app.js",
   "scripts": {
-    "build": "netlify deploy --prod",
+    "build": "echo 'No build step required'", 
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
